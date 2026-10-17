@@ -120,13 +120,15 @@
     const now = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" }));
     const day = now.getDay(); // 0 = Sunday
     const mins = now.getHours() * 60 + now.getMinutes();
-    const open = 9 * 60, close = 17 * 60;
+    // two sessions, Monday to Saturday: 12:30–2:30 PM and 4:30–7:00 PM
     let text, short, isOpen = false;
-    if (day === 0) { text = "Sunday: emergency on-call only · opens Monday, 9:00 AM"; short = "On-call only today"; }
-    else if (mins < open) { text = "Opens today at 9:00 AM"; short = "Opens 9 AM today"; }
-    else if (mins < close) { isOpen = true; text = "Consulting now · open until 5:00 PM"; short = "Open now · till 5 PM"; }
-    else if (day === 6) { text = "Closed for today · opens Monday, 9:00 AM"; short = "Closed · opens Mon 9 AM"; }
-    else { text = "Closed for today · opens tomorrow, 9:00 AM"; short = "Closed · opens 9 AM"; }
+    if (day === 0) { text = "Closed today (Sunday) · opens Monday, 12:30 PM"; short = "Closed · opens Mon 12:30"; }
+    else if (mins < 750) { text = "Opens today at 12:30 PM"; short = "Opens 12:30 PM today"; }
+    else if (mins < 870) { isOpen = true; text = "Consulting now · until 2:30 PM"; short = "Open now · till 2:30 PM"; }
+    else if (mins < 990) { text = "On a short break · back at 4:30 PM"; short = "Back at 4:30 PM"; }
+    else if (mins < 1140) { isOpen = true; text = "Consulting now · until 7:00 PM"; short = "Open now · till 7 PM"; }
+    else if (day === 6) { text = "Closed for today · opens Monday, 12:30 PM"; short = "Closed · opens Mon 12:30"; }
+    else { text = "Closed for today · opens tomorrow, 12:30 PM"; short = "Closed · opens 12:30 PM"; }
     statusEl.classList.toggle("is-open", isOpen);
     $(".status__text", statusEl).textContent = text;
     $(".status__short", statusEl).textContent = short;
@@ -521,7 +523,7 @@
   const form = $("#apptForm");
   const formDone = $("#formDone");
   const typeSelect = $("#fType");
-  const CLINIC_WHATSAPP = "919845012345";
+  const CLINIC_WHATSAPP = "919164000009";
 
   function setConsultType(value) {
     if (!typeSelect) return;
