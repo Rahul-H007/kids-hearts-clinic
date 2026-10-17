@@ -31,11 +31,11 @@
   <div class="container strip__inner">
     <div class="strip__call">
       <span class="icon-dot"><span class="material-symbols-outlined">call</span></span>
-      <span>Clinic &amp; Appointment Line:</span>
+      <span class="strip__label">Clinic &amp; Appointment Line:</span>
       <a href="tel:+919845012345">+91 98450 12345</a>
     </div>
     <div class="strip__meta">
-      <span class="status" id="clinicStatus"><span class="status__dot"></span><span class="status__text">Consulting Mon–Sat, 9:00 AM – 5:00 PM</span></span>
+      <span class="status" id="clinicStatus"><span class="status__dot"></span><span class="status__text">Consulting Mon–Sat, 9:00 AM – 5:00 PM</span><span class="status__short">Mon–Sat, 9–5</span></span>
       <span class="strip__langs">English • ಕನ್ನಡ • हिन्दी • मराठी</span>
     </div>
   </div>
@@ -74,7 +74,6 @@
   <section class="hero">
     <div class="blob blob--1" data-parallax="0.15"></div>
     <div class="blob blob--2" data-parallax="-0.1"></div>
-    <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
 
     <div class="container hero__grid">
       <div class="hero__copy">
@@ -179,7 +178,7 @@
       <div class="heartbeat__copy">
         <div class="eyebrow reveal"><span class="eyebrow__bar"></span>A little wonder</div>
         <h2 class="h2 reveal">A child’s heart beats faster than yours — and that’s perfectly normal.</h2>
-        <p class="lead reveal">Little hearts are small and busy, so they beat quicker. As children grow, their heartbeat slowly settles. Slide through the ages and tap the heart to feel the rhythm.</p>
+        <p class="lead reveal">Little hearts are small and busy, so they beat quicker. As children grow, their heartbeat slowly settles. Choose an age, then tap the heart to feel its rhythm.</p>
 
         <div class="age-picker reveal" role="group" aria-label="Choose an age">
           <input type="range" id="ageRange" min="0" max="5" step="1" value="0" aria-label="Child's age group" />
@@ -289,7 +288,6 @@
         <div class="eyebrow reveal"><span class="eyebrow__bar"></span>For you, the parent</div>
         <h2 class="h2 reveal">Worrying means you love them. Let’s breathe together for a moment.</h2>
         <p class="lead reveal">Waiting for answers about your child is hard. If your heart is racing, try a minute of slow breathing. It helps — and a calm parent is the best comfort a child can have.</p>
-        <button class="btn btn--primary btn--lg reveal" id="breatheBtn"><span class="material-symbols-outlined">air</span><span id="breatheBtnText">Begin one minute of calm</span></button>
       </div>
       <div class="breathe__stage reveal">
         <div class="breath" id="breath">
@@ -298,6 +296,7 @@
           <span class="breath__label" id="breathLabel">Ready when you are</span>
           <span class="breath__count" id="breathCount"></span>
         </div>
+        <button class="btn btn--primary btn--lg" id="breatheBtn"><span class="material-symbols-outlined">air</span><span id="breatheBtnText">Begin one minute of calm</span></button>
       </div>
     </div>
   </section>
@@ -311,8 +310,13 @@
         <p class="muted">A heart clinic visit doesn’t have to be stressful. Here’s what to bring, what to say, and what to expect.</p>
       </div>
 
-      <div class="guide reveal-stagger">
-        <div class="guide__card">
+      <div class="guide-tabs" role="tablist" aria-label="Visit guide">
+        <button role="tab" aria-selected="true" data-tab="0"><span class="material-symbols-outlined">folder_shared</span>Bring</button>
+        <button role="tab" aria-selected="false" data-tab="1"><span class="material-symbols-outlined">record_voice_over</span>Talk</button>
+        <button role="tab" aria-selected="false" data-tab="2"><span class="material-symbols-outlined">schedule</span>Expect</button>
+      </div>
+      <div class="guide reveal-stagger" id="guideCards">
+        <div class="guide__card is-active">
           <span class="guide__num">01</span>
           <span class="guide__icon"><span class="material-symbols-outlined">folder_shared</span></span>
           <h3>What to bring</h3>

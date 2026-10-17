@@ -83,21 +83,6 @@
     heroTitle.innerHTML = parts.join("");
   }
 
-  /* ---------- Floating hearts ---------- */
-  const heartsBox = $("#floatingHearts");
-  if (heartsBox && !reducedMotion) {
-    const count = window.innerWidth < 720 ? 8 : 14;
-    for (let n = 0; n < count; n++) {
-      const h = document.createElement("span");
-      h.className = "material-symbols-outlined fill";
-      h.textContent = "favorite";
-      const size = 10 + Math.random() * 18;
-      const dur = 16 + Math.random() * 16;
-      h.style.cssText = `left:${Math.random() * 100}%;font-size:${size}px;animation-duration:${dur}s;animation-delay:${-Math.random() * dur}s;--dx:${(Math.random() - 0.5) * 120}px;--rot:${(Math.random() - 0.5) * 60}deg;`;
-      heartsBox.appendChild(h);
-    }
-  }
-
   /* ---------- Reveal on scroll ---------- */
   const revealIO = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -136,13 +121,15 @@
     const day = now.getDay(); // 0 = Sunday
     const mins = now.getHours() * 60 + now.getMinutes();
     const open = 9 * 60, close = 17 * 60;
-    let text, isOpen = false;
-    if (day === 0) text = "Sunday: emergency on-call only · opens Monday, 9:00 AM";
-    else if (mins < open) text = "Opens today at 9:00 AM";
-    else if (mins < close) { isOpen = true; text = "Consulting now · open until 5:00 PM"; }
-    else text = day === 6 ? "Closed for today · opens Monday, 9:00 AM" : "Closed for today · opens tomorrow, 9:00 AM";
+    let text, short, isOpen = false;
+    if (day === 0) { text = "Sunday: emergency on-call only · opens Monday, 9:00 AM"; short = "On-call only today"; }
+    else if (mins < open) { text = "Opens today at 9:00 AM"; short = "Opens 9 AM today"; }
+    else if (mins < close) { isOpen = true; text = "Consulting now · open until 5:00 PM"; short = "Open now · till 5 PM"; }
+    else if (day === 6) { text = "Closed for today · opens Monday, 9:00 AM"; short = "Closed · opens Mon 9 AM"; }
+    else { text = "Closed for today · opens tomorrow, 9:00 AM"; short = "Closed · opens 9 AM"; }
     statusEl.classList.toggle("is-open", isOpen);
     $(".status__text", statusEl).textContent = text;
+    $(".status__short", statusEl).textContent = short;
   }
   updateStatus();
   setInterval(updateStatus, 60_000);
@@ -497,6 +484,18 @@
     c.addEventListener("change", updatePack);
   });
   if (checks.length) updatePack();
+
+  /* ---------- Guide tabs (phones show one card at a time) ---------- */
+  const guideTabs = $$(".guide-tabs button");
+  const guideCards = $$("#guideCards .guide__card");
+  guideTabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const i = Number(tab.dataset.tab);
+      guideTabs.forEach((t, n) => t.setAttribute("aria-selected", String(n === i)));
+      guideCards.forEach((c, n) => c.classList.toggle("is-active", n === i));
+      lenis?.resize();
+    });
+  });
 
   /* ---------- FAQ accordion ---------- */
   const faqItems = $$(".faq__item");
