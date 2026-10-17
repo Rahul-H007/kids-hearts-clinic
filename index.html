@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kids Heart Clinic | Dr. Veeresh Manvi – Pediatric Cardiology</title>
+<meta name="description" content="Gentle, expert pediatric cardiology care by Dr. Veeresh Manvi. Painless echocardiography, newborn heart screening and congenital heart care in a calm, child-friendly clinic." />
+<meta name="theme-color" content="#fff9fa" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0..1,0&display=block" rel="stylesheet" />
+<link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body class="is-loading">
+
+<!-- Gentle intro: one soft heartbeat before the page opens -->
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro__heart">
+    <svg viewBox="0 0 32 29" width="64" height="58"><path d="M16 28.5S1 19.4 1 9.2C1 4.6 4.5 1 8.8 1c3 0 5.6 1.7 7.2 4.3C17.6 2.7 20.2 1 23.2 1 27.5 1 31 4.6 31 9.2c0 10.2-15 19.3-15 19.3z"/></svg>
+  </div>
+  <p class="intro__text">Take a slow breath. <em>You’re in gentle hands.</em></p>
+</div>
+
+<div class="scroll-progress" aria-hidden="true"><span id="progressBar"></span></div>
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- Info strip -->
+<div class="strip">
+  <div class="container strip__inner">
+    <div class="strip__call">
+      <span class="icon-dot"><span class="material-symbols-outlined">call</span></span>
+      <span>Clinic &amp; Appointment Line:</span>
+      <a href="tel:+919845012345">+91 98450 12345</a>
+    </div>
+    <div class="strip__meta">
+      <span class="status" id="clinicStatus"><span class="status__dot"></span><span class="status__text">Consulting Mon–Sat, 9:00 AM – 5:00 PM</span></span>
+      <span class="strip__langs">English • ಕನ್ನಡ • हिन्दी • मराठी</span>
+    </div>
+  </div>
+</div>
+
+<!-- Navigation -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a class="brand" href="#top" data-scroll>
+      <span class="brand__mark"><span class="material-symbols-outlined fill">favorite</span></span>
+      <span class="brand__text">
+        <span class="brand__name">Kids Heart Clinic <span class="pill">Pediatric</span></span>
+        <span class="brand__sub">Pediatric Cardiology • Dr. Veeresh Manvi</span>
+      </span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#about" data-scroll>About Doctor</a>
+      <a href="#services" data-scroll>Services</a>
+      <a href="#journey" data-scroll>Your Visit</a>
+      <a href="#guide" data-scroll>Parent Guide</a>
+      <a href="#faq" data-scroll>FAQ</a>
+      <a href="#contact" data-scroll>Contact</a>
+    </nav>
+    <div class="header__actions">
+      <a class="btn btn--primary btn--sm" href="#contact" data-scroll>
+        <span class="material-symbols-outlined">calendar_month</span><span class="hide-xs">Book Consultation</span><span class="show-xs">Book</span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="blob blob--1" data-parallax="0.15"></div>
+    <div class="blob blob--2" data-parallax="-0.1"></div>
+    <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <div class="chip reveal">
+          <span class="material-symbols-outlined fill beat">favorite</span>
+          17+ years of gentle pediatric cardiology care
+        </div>
+        <h1 class="hero__title split-words">Every tiny heartbeat holds a lifetime of dreams. We’re here to protect them, <em>gently.</em></h1>
+
+        <svg class="ecg" viewBox="0 0 600 60" preserveAspectRatio="none" aria-hidden="true">
+          <path id="ecgPath" d="M0 30 H120 L135 30 L145 14 L155 46 L165 4 L178 56 L190 30 H300 L315 30 L325 14 L335 46 L345 4 L358 56 L370 30 H480 L495 30 L505 14 L515 46 L525 4 L538 56 L550 30 H600" />
+        </svg>
+
+        <p class="hero__lead reveal">
+          Led by <strong>Dr. Veeresh Manvi</strong> (MBBS, MD, FNB Pediatric Cardiology, FCPC), our clinic pairs careful, expert diagnostics with a calm, comforting space made for babies, children and the parents who love them.
+        </p>
+        <div class="hero__ctas reveal">
+          <a class="btn btn--primary btn--lg magnetic" href="#contact" data-scroll>Book a Consultation <span class="material-symbols-outlined">arrow_forward</span></a>
+          <a class="btn btn--ghost btn--lg" href="#heartbeat" data-scroll><span class="material-symbols-outlined">ecg_heart</span> Listen to a little heart</a>
+        </div>
+
+        <div class="stats reveal-stagger">
+          <div class="stat"><span class="stat__num" data-count="17" data-suffix="+">0</span><span class="stat__label">Years of dedicated experience</span></div>
+          <div class="stat"><span class="stat__num" data-count="5000" data-suffix="+">0</span><span class="stat__label">Little hearts cared for</span></div>
+          <div class="stat"><span class="stat__num stat__num--sm">Mon–Sat</span><span class="stat__label">9:00 AM – 5:00 PM</span></div>
+          <div class="stat"><span class="stat__num stat__num--sm">4 Languages</span><span class="stat__label">Kannada, Eng, Hindi, Marathi</span></div>
+        </div>
+      </div>
+
+      <div class="hero__portrait reveal">
+        <div class="portrait" data-parallax="-0.08">
+          <div class="portrait__glow"></div>
+          <div class="portrait__frame tilt">
+            <div class="portrait__fallback" aria-hidden="true">
+              <span class="material-symbols-outlined fill">favorite</span>
+            </div>
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1ZIEGY881OLshkJshjzqcFbYPLZCIvZxV0BGfIrXZXVd_G43j35XMaaYn8gfSJ_eOSR4TtMoiQ9CSMHYdNHQBUrjchNFFulBfCsBTAl9H8Av-cLqXbfYgasgZBYW_99kYKNmvLqUzMZ6xqoIleqxESe4eSyEjBNM3SSJ24j8juUdFu6A_rV-JHn6tVw1ppR-D5VUtD0RXkuvoHOTYRrqIwQROPub64CEaAJfqYts2oWUi1DOB5Drt5w"
+                 alt="Dr. Veeresh Manvi, pediatric cardiologist" loading="eager" onerror="this.remove()" />
+            <div class="portrait__caption">
+              <span class="badge-glass"><span class="material-symbols-outlined">verified</span> Senior Pediatric Cardiologist</span>
+              <h3>Dr. Veeresh Manvi</h3>
+              <p>MBBS, MD, FNB Pediatric Cardiology, FCPC</p>
+              <small>Specialist in congenital &amp; pediatric heart conditions</small>
+            </div>
+          </div>
+          <div class="float-card">
+            <span class="float-card__icon"><span class="material-symbols-outlined">medical_services</span></span>
+            <div><strong>Child-friendly diagnostics</strong><small>Warm, painless, needle-free echo</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="scroll-cue" href="#promise" data-scroll aria-label="Scroll down">
+      <span>Scroll gently</span><span class="scroll-cue__line"></span>
+    </a>
+  </section>
+
+  <!-- Promise: words light up as you scroll -->
+  <section class="promise" id="promise">
+    <div class="container container--narrow">
+      <span class="promise__icon"><span class="material-symbols-outlined">volunteer_activism</span></span>
+      <p class="promise__text" id="promiseText">You and your child are in safe, gentle hands. We know that any worry about your child’s heart can feel overwhelming. From the moment you step through our door, everything slows down — so your little one feels at ease, and you feel fully heard.</p>
+      <div class="eyebrow-line"><span></span>The Kids Heart Clinic promise<span></span></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section section--white" id="about">
+    <div class="container about__grid">
+      <div class="about__story">
+        <div class="eyebrow reveal"><span class="eyebrow__bar"></span>Meet your pediatric cardiologist</div>
+        <h2 class="h2 reveal">Nearly two decades of caring for little hearts — one unhurried conversation at a time.</h2>
+        <p class="lead reveal">Dr. Veeresh Manvi has spent over 17 years caring for young patients — from delicate premature newborns weighing under two kilograms to busy, curious teenagers. His consultations move at your pace: time to ask every question, look at the scans together, and leave understanding your child’s care without the fog of worry.</p>
+
+        <div class="cred-grid reveal-stagger">
+          <div class="cred"><div class="cred__head"><span class="material-symbols-outlined">school</span>Qualifications</div><strong>MBBS, MD (Paediatrics)</strong><small>FNB (Paediatric Cardiology), FCPC</small></div>
+          <div class="cred"><div class="cred__head"><span class="material-symbols-outlined">history_edu</span>Dedicated practice</div><strong>17+ years in pediatric cardiology</strong><small>Congenital &amp; acquired heart conditions</small></div>
+          <div class="cred"><div class="cred__head"><span class="material-symbols-outlined">psychology_alt</span>Care philosophy</div><strong>Unrushed &amp; empathetic</strong><small>A child-friendly pace, needle-free echo</small></div>
+          <div class="cred"><div class="cred__head"><span class="material-symbols-outlined">translate</span>Spoken languages</div><strong>English, Kannada (ಕನ್ನಡ)</strong><small>Hindi (हिन्दी), Marathi (मराठी)</small></div>
+        </div>
+
+        <blockquote class="quote reveal">
+          <span class="material-symbols-outlined">format_quote</span>
+          <p>“A heart visit should never feel frightening for a child, or confusing for a parent. I explain every murmur, every chamber and every reading in simple, kind words — until it makes sense.”</p>
+        </blockquote>
+      </div>
+
+      <aside class="apart reveal">
+        <h3 class="h3">What makes our practice feel different</h3>
+        <div class="apart__item"><span class="apart__icon"><span class="material-symbols-outlined">baby_changing_station</span></span><div><h4>Probes made for tiny chests</h4><p>Gentle, high-frequency pediatric ultrasound probes and warmed gel, so babies stay calm and cosy.</p></div></div>
+        <div class="apart__item"><span class="apart__icon"><span class="material-symbols-outlined">family_restroom</span></span><div><h4>You stay right beside them</h4><p>Feed, hold, sing or read to your child throughout the scan. No cold rooms, no separation.</p></div></div>
+        <div class="apart__item"><span class="apart__icon"><span class="material-symbols-outlined">quick_reference_all</span></span><div><h4>Answers the same day</h4><p>A clear explanation and a detailed report before you leave — no anxious waiting at home.</p></div></div>
+        <a class="btn btn--soft btn--block" href="#contact" data-scroll>Schedule an evaluation with Dr. Manvi <span class="material-symbols-outlined">arrow_forward</span></a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Interactive heartbeat -->
+  <section class="heartbeat" id="heartbeat">
+    <div class="container heartbeat__grid">
+      <div class="heartbeat__copy">
+        <div class="eyebrow reveal"><span class="eyebrow__bar"></span>A little wonder</div>
+        <h2 class="h2 reveal">A child’s heart beats faster than yours — and that’s perfectly normal.</h2>
+        <p class="lead reveal">Little hearts are small and busy, so they beat quicker. As children grow, their heartbeat slowly settles. Slide through the ages and tap the heart to feel the rhythm.</p>
+
+        <div class="age-picker reveal" role="group" aria-label="Choose an age">
+          <input type="range" id="ageRange" min="0" max="5" step="1" value="0" aria-label="Child's age group" />
+          <div class="age-picker__labels" id="ageLabels">
+            <button data-i="0">Newborn</button><button data-i="1">Infant</button><button data-i="2">Toddler</button><button data-i="3">Pre-school</button><button data-i="4">School age</button><button data-i="5">Teen</button>
+          </div>
+        </div>
+
+        <div class="hb-readout reveal">
+          <div><span class="hb-readout__num" id="bpmNum">130</span><span class="hb-readout__unit">beats / min</span></div>
+          <p id="bpmNote">A newborn’s heart usually beats around <strong>100–160</strong> times a minute.</p>
+        </div>
+        <p class="tiny">Typical resting ranges for healthy children; every child is unique. Only a doctor can tell you what’s right for yours.</p>
+      </div>
+
+      <div class="heartbeat__stage reveal">
+        <button class="big-heart" id="bigHeart" aria-label="Tap to hear a gentle heartbeat">
+          <span class="big-heart__ring"></span><span class="big-heart__ring big-heart__ring--2"></span>
+          <svg viewBox="0 0 32 29"><defs><linearGradient id="hg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4b2bb"/><stop offset="1" stop-color="#c5495e"/></linearGradient></defs><path fill="url(#hg)" d="M16 28.5S1 19.4 1 9.2C1 4.6 4.5 1 8.8 1c3 0 5.6 1.7 7.2 4.3C17.6 2.7 20.2 1 23.2 1 27.5 1 31 4.6 31 9.2c0 10.2-15 19.3-15 19.3z"/></svg>
+        </button>
+        <button class="sound-toggle" id="soundToggle" aria-pressed="false">
+          <span class="material-symbols-outlined">volume_off</span><span class="sound-toggle__label">Tap to hear the heartbeat</span>
+        </button>
+        <p class="hb-today">Today, a little heart like this will beat about <strong id="beatsToday">187,200</strong> times.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section section--blush" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow eyebrow--center"><span class="material-symbols-outlined">ecg_heart</span>Comprehensive pediatric cardiac care</div>
+        <h2 class="h2">Advanced, gentle diagnostics made only for growing hearts</h2>
+        <p class="muted">Careful, non-invasive care for newborns, infants, young children and adolescents.</p>
+      </div>
+
+      <div class="services reveal-stagger">
+        <article class="service">
+          <span class="service__icon"><span class="material-symbols-outlined">monitor_heart</span></span>
+          <h3>Pediatric Echocardiography</h3>
+          <p>High-resolution colour Doppler ultrasound tuned for babies and children. No radiation, no needles, no pain — just a warm, gentle scan.</p>
+          <div class="service__foot"><span>Radiation-free • Same-day results</span><span class="material-symbols-outlined">check_circle</span></div>
+        </article>
+        <article class="service">
+          <span class="service__icon"><span class="material-symbols-outlined">vital_signs</span></span>
+          <h3>Congenital Heart Defect Care</h3>
+          <p>Thorough evaluation and management of ASD, VSD, PDA, Tetralogy of Fallot, coarctation and more — with guidance before and after any procedure.</p>
+          <div class="service__foot"><span>Pre &amp; post procedure follow-up</span><span class="material-symbols-outlined">check_circle</span></div>
+        </article>
+        <article class="service">
+          <span class="service__icon"><span class="material-symbols-outlined">child_care</span></span>
+          <h3>Newborns &amp; Heart Murmurs</h3>
+          <p>Prompt newborn screening to tell innocent murmurs from ones that need care, and support for blueness, poor feeding or fast breathing.</p>
+          <div class="service__foot"><span>Priority newborn slots</span><span class="material-symbols-outlined">check_circle</span></div>
+        </article>
+        <article class="service">
+          <span class="service__icon"><span class="material-symbols-outlined">cardiology</span></span>
+          <h3>Arrhythmias &amp; Palpitations</h3>
+          <p>Pediatric 12-lead ECG, Holter rhythm monitoring and calm assessment of racing or fluttering heartbeats in children.</p>
+          <div class="service__foot"><span>Holter &amp; rhythm guidance</span><span class="material-symbols-outlined">check_circle</span></div>
+        </article>
+        <article class="service">
+          <span class="service__icon"><span class="material-symbols-outlined">sports_gymnastics</span></span>
+          <h3>Fainting &amp; Chest Pain in Youth</h3>
+          <p>Careful evaluation of fainting spells, dizziness and exercise-related chest discomfort, plus safe clearance for school sports.</p>
+          <div class="service__foot"><span>Sports &amp; school clearance</span><span class="material-symbols-outlined">check_circle</span></div>
+        </article>
+        <article class="service">
+          <span class="service__icon"><span class="material-symbols-outlined">clinical_notes</span></span>
+          <h3>Growing Up, Tracked with Care</h3>
+          <p>Long-term follow-up after heart surgery or catheter procedures — watching growth, weight and wellbeing as your child thrives.</p>
+          <div class="service__foot"><span>Support through every stage</span><span class="material-symbols-outlined">check_circle</span></div>
+        </article>
+      </div>
+
+      <div class="note-bar reveal">
+        <div><span class="material-symbols-outlined">info</span>Want a second look at a previous scan or finding? We offer thorough second opinions.</div>
+        <a href="#contact" data-scroll data-consult="Second Opinion on Previous Echo">Request a second opinion <span class="material-symbols-outlined">chevron_right</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Journey timeline -->
+  <section class="section section--white journey" id="journey">
+    <div class="container container--mid">
+      <div class="section-head reveal">
+        <div class="eyebrow eyebrow--center"><span class="material-symbols-outlined">route</span>Your visit, step by step</div>
+        <h2 class="h2">A calm little journey, from hello to home</h2>
+        <p class="muted">Knowing what happens next takes away half the worry. Here’s how your visit unfolds.</p>
+      </div>
+      <div class="timeline" id="timeline">
+        <span class="timeline__track"><span class="timeline__fill" id="timelineFill"></span></span>
+        <div class="tl"><span class="tl__dot"><span class="material-symbols-outlined">waving_hand</span></span><div class="tl__card"><span class="tl__time">First few minutes</span><h3>A warm welcome</h3><p>Our coordinator greets you by name. There’s a quiet corner for feeding, toys for little hands, and no rush at the desk.</p></div></div>
+        <div class="tl"><span class="tl__dot"><span class="material-symbols-outlined">toys</span></span><div class="tl__card"><span class="tl__time">Settling in</span><h3>Time to feel at home</h3><p>Your child gets to explore and relax. Dr. Manvi chats with you first — about your child, not just the symptoms.</p></div></div>
+        <div class="tl"><span class="tl__dot"><span class="material-symbols-outlined">stethoscope</span></span><div class="tl__card"><span class="tl__time">10–20 minutes</span><h3>A gentle examination &amp; echo</h3><p>Dim lights, soft music or cartoons, warm gel. You hold their hand throughout. No needles, ever.</p></div></div>
+        <div class="tl"><span class="tl__dot"><span class="material-symbols-outlined">forum</span></span><div class="tl__card"><span class="tl__time">Together</span><h3>Talking it through</h3><p>We look at the pictures together. Diagrams, simple words, and all the time you need for every question.</p></div></div>
+        <div class="tl"><span class="tl__dot"><span class="material-symbols-outlined">home_health</span></span><div class="tl__card"><span class="tl__time">Before you leave</span><h3>Home with a clear plan</h3><p>A written report and next steps in hand — and a phone number you can call if anything worries you later.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breathe with us -->
+  <section class="breathe" id="breathe">
+    <div class="container breathe__grid">
+      <div class="breathe__copy">
+        <div class="eyebrow reveal"><span class="eyebrow__bar"></span>For you, the parent</div>
+        <h2 class="h2 reveal">Worrying means you love them. Let’s breathe together for a moment.</h2>
+        <p class="lead reveal">Waiting for answers about your child is hard. If your heart is racing, try a minute of slow breathing. It helps — and a calm parent is the best comfort a child can have.</p>
+        <button class="btn btn--primary btn--lg reveal" id="breatheBtn"><span class="material-symbols-outlined">air</span><span id="breatheBtnText">Begin one minute of calm</span></button>
+      </div>
+      <div class="breathe__stage reveal">
+        <div class="breath" id="breath">
+          <span class="breath__halo"></span>
+          <span class="breath__circle"></span>
+          <span class="breath__label" id="breathLabel">Ready when you are</span>
+          <span class="breath__count" id="breathCount"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parent guide -->
+  <section class="section section--white" id="guide">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow eyebrow--center">Peace-of-mind guide</div>
+        <h2 class="h2">Preparing for your child’s visit</h2>
+        <p class="muted">A heart clinic visit doesn’t have to be stressful. Here’s what to bring, what to say, and what to expect.</p>
+      </div>
+
+      <div class="guide reveal-stagger">
+        <div class="guide__card">
+          <span class="guide__num">01</span>
+          <span class="guide__icon"><span class="material-symbols-outlined">folder_shared</span></span>
+          <h3>What to bring</h3>
+          <p class="guide__hint">Tick things off as you pack — we’ll remember for you.</p>
+          <ul class="checklist" id="checklist">
+            <li><label><input type="checkbox" data-key="files" /><span class="box"></span><span>Previous medical files, pediatric notes or birth discharge summary</span></label></li>
+            <li><label><input type="checkbox" data-key="reports" /><span class="box"></span><span>Any earlier ECG or echo reports</span></label></li>
+            <li><label><input type="checkbox" data-key="comfort" /><span class="box"></span><span>A favourite blanket, pacifier or cuddly toy</span></label></li>
+            <li><label><input type="checkbox" data-key="snack" /><span class="box"></span><span>A small snack, or a feeding bottle for babies</span></label></li>
+          </ul>
+          <div class="pack-meter"><span id="packFill"></span></div>
+          <div class="guide__tip" id="packMsg">Tip: feeding your baby just before the echo often helps them sleep right through it.</div>
+        </div>
+
+        <div class="guide__card">
+          <span class="guide__num">02</span>
+          <span class="guide__icon"><span class="material-symbols-outlined">record_voice_over</span></span>
+          <h3>How to talk to your child</h3>
+          <ul class="ticks">
+            <li>Promise them there are <strong>no shots, injections or needles</strong> in an echo.</li>
+            <li>Tell them the doctor has a special camera and warm jelly to make a “movie” of their heartbeat.</li>
+            <li>Remind them you’ll be right beside them, holding their hand the whole time.</li>
+          </ul>
+          <div class="guide__tip">Kind, positive words turn the visit into a small adventure.</div>
+        </div>
+
+        <div class="guide__card">
+          <span class="guide__num">03</span>
+          <span class="guide__icon"><span class="material-symbols-outlined">schedule</span></span>
+          <h3>What to expect</h3>
+          <ul class="ticks">
+            <li>An unhurried 30–45 minute consultation, just for your family.</li>
+            <li>A dim, quiet, cosy room with cartoons or soft nursery songs.</li>
+            <li>An honest conversation with Dr. Manvi, with diagrams and clear next steps.</li>
+          </ul>
+          <div class="guide__tip">No question is too small. Every one is welcome.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--blush" id="faq">
+    <div class="container container--narrow">
+      <div class="section-head reveal">
+        <div class="eyebrow eyebrow--center">Clarity &amp; answers</div>
+        <h2 class="h2">Questions parents often ask us</h2>
+      </div>
+      <div class="faq reveal-stagger" id="faqList">
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false"><span>Is an echocardiogram painful or scary for my baby?</span><span class="faq__plus"></span></button>
+          <div class="faq__a"><p>Not at all. An echo uses safe ultrasound sound waves — no radiation and no pain. It feels like a smooth, warm probe gliding over the chest with soft gel. You can hold your baby or feed them during the scan.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false"><span>Do I need a pediatrician’s referral to book?</span><span class="faq__plus"></span></button>
+          <div class="faq__a"><p>Many parents come to us after their pediatrician hears a murmur, but a referral letter isn’t required. Reach out directly if there’s a family history, symptoms you’ve noticed, or simply a worry you’d like put to rest.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false"><span>How long does the whole evaluation take?</span><span class="faq__plus"></span></button>
+          <div class="faq__a"><p>We set aside 30 to 45 minutes for a first consultation — enough time to examine your child, let them settle, do the echo at an unhurried pace, and talk through the findings with you properly.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false"><span>How soon can we get an appointment?</span><span class="faq__plus"></span></button>
+          <div class="faq__a"><p>Routine appointments are usually available within 24–48 hours. For newborns with suspected serious heart conditions, fast breathing, or cases flagged as urgent by a doctor, we keep same-day priority slots.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false"><span>My child is very anxious about doctors. What can we do?</span><span class="faq__plus"></span></button>
+          <div class="faq__a"><p>That’s very common, and we’re used to it. Let us know when you book. We’ll give extra time to settle in, keep the room quiet, and let your child sit on your lap. Bringing a favourite toy or show on your phone helps a lot.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section--white" id="contact">
+    <div class="container contact__grid">
+      <div class="contact__info">
+        <div class="eyebrow reveal"><span class="eyebrow__bar"></span>Connect with us</div>
+        <h2 class="h2 reveal">Schedule a visit, or simply ask a question</h2>
+        <p class="lead reveal">Our team will kindly guide you through booking, directions and anything you’d like to know before you come.</p>
+
+        <div class="info-card reveal">
+          <div class="info-card__head"><span class="material-symbols-outlined">schedule</span>Clinic hours</div>
+          <div class="hours"><span>Monday – Saturday</span><span>9:00 AM – 5:00 PM</span></div>
+          <div class="hours hours--sun"><span>Sunday</span><span class="tag">Closed · emergency on-call</span></div>
+        </div>
+        <div class="info-card reveal">
+          <div class="info-card__head"><span class="material-symbols-outlined">location_on</span>Clinic location</div>
+          <strong>Kids Heart Clinic &amp; Diagnostic Suite</strong>
+          <p>Dedicated Pediatric Wing, Suite 204, Landmark Medical Enclave.<br />Lift access, stroller-friendly ramps and valet parking.</p>
+        </div>
+        <a class="info-card info-card--call reveal" href="tel:+919845012345">
+          <span class="info-card__big"><span class="material-symbols-outlined">call</span></span>
+          <span><small>Direct desk &amp; WhatsApp</small><strong>+91 98450 12345</strong><em>Warm help from our care coordinator</em></span>
+        </a>
+      </div>
+
+      <div class="form-wrap reveal">
+        <form class="form" id="apptForm" novalidate>
+          <h3 class="h3">Request an appointment</h3>
+          <p class="muted small">Share a few details. Our care team will call or message you within a few working hours to find a time that suits you.</p>
+
+          <div class="field-row">
+            <div class="field"><input id="fName" name="name" type="text" placeholder=" " required autocomplete="name" /><label for="fName">Parent / guardian name *</label><span class="field__err">Please tell us your name</span></div>
+            <div class="field"><input id="fChild" name="child" type="text" placeholder=" " required /><label for="fChild">Child’s name &amp; age *</label><span class="field__err">Your child’s age helps us prepare</span></div>
+          </div>
+          <div class="field-row">
+            <div class="field"><input id="fPhone" name="phone" type="tel" placeholder=" " required autocomplete="tel" pattern="[\d\s+\-()]{8,}" /><label for="fPhone">Phone number *</label><span class="field__err">A valid number, so we can reach you</span></div>
+            <div class="field field--select">
+              <select id="fType" name="type">
+                <option>Initial Consultation &amp; Echo</option>
+                <option>Newborn Heart Screening / Murmur Check</option>
+                <option>Second Opinion on Previous Echo</option>
+                <option>Post-Procedure / Annual Follow-up</option>
+                <option>Sports Fitness Cardiac Clearance</option>
+              </select>
+              <label for="fType">Type of visit</label>
+            </div>
+          </div>
+          <div class="field"><textarea id="fNotes" name="notes" rows="3" placeholder=" "></textarea><label for="fNotes">Notes or symptoms (optional)</label></div>
+
+          <button class="btn btn--primary btn--lg btn--block" type="submit"><span class="material-symbols-outlined">send</span>Send consultation request</button>
+          <p class="tiny center">Your details stay private and are never shared.</p>
+        </form>
+
+        <div class="form-done" id="formDone" hidden>
+          <div class="form-done__heart"><span class="material-symbols-outlined fill">favorite</span></div>
+          <h3 class="h3">Thank you, <span id="doneName">friend</span>.</h3>
+          <p>Your request is ready. Send it to our care coordinator on WhatsApp and we’ll get back to you soon. Whatever brought you here, you’ve already taken the most caring step.</p>
+          <a class="btn btn--primary btn--lg" id="waLink" href="#" target="_blank" rel="noopener"><span class="material-symbols-outlined">chat</span>Send on WhatsApp</a>
+          <button class="link-btn" id="formReset" type="button">Edit my request</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing note -->
+  <section class="closing">
+    <div class="container container--narrow">
+      <svg class="ecg ecg--closing" viewBox="0 0 600 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 H250 L265 30 L275 14 L285 46 L295 4 L308 56 L320 30 H600" /></svg>
+      <p class="closing__text reveal">Every heartbeat is a small promise of everything to come. <em>Thank you for trusting us with yours.</em></p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <div class="brand">
+        <span class="brand__mark brand__mark--solid"><span class="material-symbols-outlined fill">favorite</span></span>
+        <span class="brand__text"><span class="brand__name">Kids Heart Clinic</span><span class="brand__sub">Dr. Veeresh Manvi, Pediatric Cardiologist</span></span>
+      </div>
+      <p>Compassionate, non-invasive pediatric cardiology, echocardiography and newborn heart screening, with over 17 years of dedicated experience.</p>
+      <span class="verified"><span class="material-symbols-outlined">verified</span>Registered Medical Practitioner • KMC Verified</span>
+    </div>
+    <div class="footer__col">
+      <p class="footer__title">Explore</p>
+      <a href="#about" data-scroll>About Dr. Veeresh Manvi</a>
+      <a href="#services" data-scroll>Pediatric Echocardiography</a>
+      <a href="#journey" data-scroll>Your visit, step by step</a>
+      <a href="#guide" data-scroll>Parent preparation guide</a>
+      <a href="#faq" data-scroll>Frequently asked questions</a>
+    </div>
+    <div class="footer__col">
+      <p class="footer__title">Clinic contact</p>
+      <span><span class="material-symbols-outlined">call</span>+91 98450 12345 / 080 2345 6789</span>
+      <span><span class="material-symbols-outlined">mail</span>contact@kidsheartclinic.com</span>
+      <span><span class="material-symbols-outlined">schedule</span>Mon – Sat: 9:00 AM – 5:00 PM</span>
+      <span><span class="material-symbols-outlined">location_on</span>Pediatric Wing, Suite 204, Landmark Medical Enclave</span>
+    </div>
+  </div>
+  <div class="container footer__legal">
+    <p><strong>Medical disclaimer:</strong> Information on this website is for education only and is not a substitute for professional medical advice, diagnosis or consultation with a qualified pediatric cardiologist.</p>
+    <p>© <span id="year"></span> Kids Heart Clinic. Made with care.</p>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top"><span class="material-symbols-outlined fill">favorite</span></button>
+
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="web_standard" name="shell-type"/>
+<title>Kids Heart Clinic | Dr. Veeresh Manvi - Pediatric Cardiology</title>
+<style>
+    @layer base {
+      html, body { margin:0; padding:0; }
+      body { overscroll-behavior:none; }
+      main > :first-child { margin-top:0!important; }
+      main > :last-child { margin-bottom:0!important; }
+    }
+    ::-webkit-scrollbar { display:none; }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#fff5f6',
+              100: '#fde9eb',
+              200: '#fad3d8',
+              300: '#f4b2bb',
+              400: '#ea8b99',
+              500: '#de687a',
+              600: '#c5495e',
+              700: '#a33649',
+              800: '#862f3f',
+              900: '#732b39',
+            },
+            softbg: '#fff9fa',
+            surface: '#ffffff',
+            charcoal: '#2d2527',
+            muted: '#5e5255',
+            accent: '#e8a2ac',
+            accentLight: '#fdedf0',
+            accentBorder: '#f4cdd3',
+          },
+          fontFamily: {
+            headline: ["Newsreader", "Georgia", "serif"],
+            sans: ["Plus Jakarta Sans", "system-ui", "sans-serif"],
+          }
+        }
+      }
+    }
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+</head>
+<body class="bg-[#fff9fa] font-sans text-charcoal antialiased selection:bg-[#fde9eb] selection:text-[#a33649]">
+<!-- Top Emergency & Info Banner Strip -->
+<div class="bg-[#fdedf0] border-b border-[#f4cdd3]/60 py-2 text-xs md:text-sm text-charcoal/80">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-[#ea8b99]/20 text-[#a33649]">
+<span class="material-symbols-outlined text-[14px]">call</span>
+</span>
+<span class="font-medium">Direct Clinic &amp; Appointment Line:</span>
+<a class="font-bold text-[#a33649] hover:underline" href="tel:+919876543210">+91 98450 12345</a>
+</div>
+<div class="flex items-center gap-4 text-xs font-medium">
+<span class="hidden sm:inline-flex items-center gap-1.5 text-charcoal/70">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          Consulting Today: 9:00 AM – 5:00 PM
+        </span>
+<span class="text-charcoal/60">English • ಕನ್ನಡ • हिन्दी • मराठी</span>
+</div>
+</div>
+</div>
+<!-- Navigation Bar -->
+<header class="sticky top-0 w-full z-50 bg-[#fff9fa]/90 backdrop-blur-xl border-b border-[#f4cdd3]/50 transition-all duration-300">
+<div class="h-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+<!-- Clinic Logo & Brand Identity -->
+<a class="flex items-center gap-3 group" href="#">
+<div class="w-11 h-11 rounded-2xl bg-[#ea8b99]/20 border border-[#ea8b99]/40 flex items-center justify-center text-[#c5495e] shadow-sm group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[24px]">favorite</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline font-bold text-2xl tracking-tight text-[#862f3f]">Kids Heart Clinic</span>
+<span class="text-[10px] font-semibold tracking-wider uppercase px-2 py-0.5 rounded-full bg-[#fde9eb] text-[#a33649] border border-[#f4cdd3]">Pediatric</span>
+</div>
+<span class="text-xs text-charcoal/70 font-medium">Pediatric Cardiology Practice • Dr. Veeresh Manvi</span>
+</div>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center gap-1 lg:gap-2">
+<a class="font-medium text-sm text-[#862f3f] bg-[#fde9eb]/70 px-3.5 py-2 rounded-xl transition-colors hover:bg-[#fde9eb]" href="#about">About Doctor</a>
+<a class="font-medium text-sm text-charcoal/75 hover:text-[#862f3f] px-3.5 py-2 rounded-xl transition-colors hover:bg-white" href="#services">Specialties &amp; Services</a>
+<a class="font-medium text-sm text-charcoal/75 hover:text-[#862f3f] px-3.5 py-2 rounded-xl transition-colors hover:bg-white" href="#guide">Parent Guide</a>
+<a class="font-medium text-sm text-charcoal/75 hover:text-[#862f3f] px-3.5 py-2 rounded-xl transition-colors hover:bg-white" href="#faq">FAQ</a>
+<a class="font-medium text-sm text-charcoal/75 hover:text-[#862f3f] px-3.5 py-2 rounded-xl transition-colors hover:bg-white" href="#contact">Contact</a>
+</nav>
+<!-- CTA Button -->
+<div class="flex items-center gap-3">
+<a class="inline-flex items-center justify-center gap-2 bg-[#ea8b99] hover:bg-[#de687a] text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all shadow-sm hover:shadow active:scale-95" href="#contact">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span>Book Consultation</span>
+</a>
+</div>
+</div>
+</header>
+<main class="w-full">
+<!-- 2. Hero Section -->
+<section class="relative w-full pt-10 pb-16 lg:pt-16 lg:pb-24 overflow-hidden">
+<!-- Soft ambient background blush circles -->
+<div class="absolute top-1/4 -left-40 w-96 h-96 bg-[#fad3d8]/40 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+<div class="absolute top-1/3 -right-40 w-96 h-96 bg-[#fde9eb]/60 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+<!-- Left Content -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<div class="inline-flex items-center gap-2.5 bg-white text-charcoal px-4 py-1.5 rounded-full self-start text-sm font-medium border border-[#f4cdd3] shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-[#de687a]">favorite</span>
+<span class="text-[#862f3f] font-semibold">17+ Years of Gentle Pediatric Cardiology Care</span>
+</div>
+<h1 class="font-headline text-4xl sm:text-5xl lg:text-6xl text-charcoal leading-[1.15] tracking-tight">
+              Every tiny heartbeat holds a lifetime of dreams. We are here to protect them with gentle, expert care.
+            </h1>
+<p class="text-base sm:text-lg text-charcoal/80 leading-relaxed max-w-2xl font-light">
+              Led by <span class="font-semibold text-charcoal">Dr. Veeresh Manvi</span> (MBBS, MD, FNB Pediatric Cardiology, FCPC), our practice combines world-class pediatric cardiology diagnostics with an exceptionally comforting environment designed especially for children, infants, and worried parents.
+            </p>
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="inline-flex items-center gap-2 bg-[#ea8b99] hover:bg-[#de687a] text-white text-base font-semibold px-7 py-3.5 rounded-full transition-all shadow-md hover:shadow-lg active:scale-95" href="#contact">
+<span>Book a Consultation</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-2 bg-white hover:bg-[#fff5f6] text-charcoal text-base font-semibold px-7 py-3.5 rounded-full border border-[#f4cdd3] transition-all shadow-sm" href="#services">
+<span>Explore Services &amp; Care</span>
+</a>
+</div>
+<!-- Trust highlights inline badges -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 border-t border-[#f4cdd3]/60">
+<div class="bg-white/80 p-3 rounded-2xl border border-[#f4cdd3]/50">
+<span class="block font-headline text-2xl font-bold text-[#862f3f]">17+</span>
+<span class="text-xs text-muted font-medium">Years Dedicated Experience</span>
+</div>
+<div class="bg-white/80 p-3 rounded-2xl border border-[#f4cdd3]/50">
+<span class="block font-headline text-2xl font-bold text-[#862f3f]">5,000+</span>
+<span class="text-xs text-muted font-medium">Little Hearts Nurtured</span>
+</div>
+<div class="bg-white/80 p-3 rounded-2xl border border-[#f4cdd3]/50">
+<span class="block font-headline text-lg font-bold text-[#862f3f]">Mon–Sat</span>
+<span class="text-xs text-muted font-medium">9:00 AM – 5:00 PM</span>
+</div>
+<div class="bg-white/80 p-3 rounded-2xl border border-[#f4cdd3]/50">
+<span class="block font-headline text-lg font-bold text-[#862f3f]">4 Languages</span>
+<span class="text-xs text-muted font-medium">Kannada, Eng, Hindi, Marathi</span>
+</div>
+</div>
+</div>
+<!-- Right Doctor Portrait Card -->
+<div class="lg:col-span-5 relative">
+<div class="relative mx-auto max-w-md lg:max-w-none">
+<!-- Soft pink glow outline -->
+<div class="absolute -inset-2 bg-gradient-to-tr from-[#fad3d8] via-[#ea8b99]/30 to-[#fde9eb] rounded-[36px] blur-lg opacity-70"></div>
+<div class="relative rounded-[32px] overflow-hidden shadow-2xl bg-white aspect-[4/5] border-2 border-white ring-1 ring-[#f4cdd3]">
+<div class="w-full h-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA1ZIEGY881OLshkJshjzqcFbYPLZCIvZxV0BGfIrXZXVd_G43j35XMaaYn8gfSJ_eOSR4TtMoiQ9CSMHYdNHQBUrjchNFFulBfCsBTAl9H8Av-cLqXbfYgasgZBYW_99kYKNmvLqUzMZ6xqoIleqxESe4eSyEjBNM3SSJ24j8juUdFu6A_rV-JHn6tVw1ppR-D5VUtD0RXkuvoHOTYRrqIwQROPub64CEaAJfqYts2oWUi1DOB5Drt5w')"></div>
+<!-- Bottom gradient banner -->
+<div class="absolute inset-0 bg-gradient-to-t from-[#2d2527]/90 via-[#2d2527]/20 to-transparent flex flex-col justify-end p-6 text-white">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md text-white text-xs font-semibold mb-2 self-start border border-white/20">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+                    Senior Pediatric Cardiologist
+                  </div>
+<h3 class="font-headline text-2xl font-bold tracking-normal">Dr. Veeresh Manvi</h3>
+<p class="text-sm text-white/90 font-medium">MBBS, MD, FNB Pediatric Cardiology, FCPC</p>
+<p class="text-xs text-white/70 mt-1">Specialist in Congenital &amp; Pediatric Heart Diseases</p>
+</div>
+</div>
+<!-- Floating reassurance micro-card -->
+<div class="absolute -bottom-5 -left-4 sm:-left-6 bg-white py-3 px-4 rounded-2xl shadow-xl border border-[#f4cdd3] flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-[#fdedf0] text-[#a33649] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">medical_services</span>
+</div>
+<div>
+<p class="text-xs font-semibold text-charcoal">Child-Friendly Diagnostics</p>
+<p class="text-[11px] text-muted">Warm, painless, non-invasive echo</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Reassuring Parent Empathy Banner -->
+<section class="w-full bg-[#fff0f2] border-y border-[#f4cdd3]/70 py-10">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
+<div class="w-12 h-12 mx-auto mb-4 rounded-full bg-white text-[#de687a] flex items-center justify-center shadow-sm border border-[#f4cdd3]">
+<span class="material-symbols-outlined text-[26px]">volunteer_activism</span>
+</div>
+<p class="font-headline text-xl sm:text-2xl lg:text-3xl text-[#732b39] font-normal leading-relaxed italic">
+          “You and your child are in safe, gentle hands. We understand that any concern about your child’s heart can feel overwhelming. From the moment you step into our clinic, our care is tailored to make children feel at ease and parents fully supported.”
+        </p>
+<div class="mt-4 flex items-center justify-center gap-2">
+<span class="w-8 h-[1px] bg-[#ea8b99]"></span>
+<span class="text-xs tracking-wider uppercase font-semibold text-[#862f3f]">Kids Heart Clinic Promise</span>
+<span class="w-8 h-[1px] bg-[#ea8b99]"></span>
+</div>
+</div>
+</section>
+<!-- 4. Meet Dr. Veeresh Manvi (Detailed Editorial Spotlight) -->
+<section class="w-full py-16 lg:py-24 bg-white" id="about">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Editorial Story Column -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<div class="flex items-center gap-2">
+<span class="h-px w-8 bg-[#ea8b99]"></span>
+<span class="text-xs font-bold uppercase tracking-widest text-[#a33649]">Meet Your Pediatric Cardiologist</span>
+</div>
+<h2 class="font-headline text-3xl sm:text-4xl lg:text-5xl text-charcoal">
+              A clinical dedication to little hearts, backed by 17+ years of clinical excellence.
+            </h2>
+<p class="text-base text-charcoal/80 leading-relaxed font-light">
+              Dr. Veeresh Manvi has spent nearly two decades treating young patients—from delicate premature newborns weighing under two kilograms to active adolescents. His philosophy centers around slow-paced, transparent consultations where parents have the uninterrupted time to ask every question, look at the scans, and understand their child’s care pathway without anxiety.
+            </p>
+<!-- Verified Credentials Bento Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2">
+<div class="p-4 rounded-2xl bg-[#fff9fa] border border-[#f4cdd3]/80">
+<div class="flex items-center gap-2.5 text-[#862f3f] mb-1">
+<span class="material-symbols-outlined text-[20px]">school</span>
+<span class="text-xs font-bold uppercase tracking-wider">Qualifications</span>
+</div>
+<p class="text-sm font-semibold text-charcoal">MBBS, MD (Paediatrics)</p>
+<p class="text-xs text-muted">FNB (Paediatric Cardiology), FCPC</p>
+</div>
+<div class="p-4 rounded-2xl bg-[#fff9fa] border border-[#f4cdd3]/80">
+<div class="flex items-center gap-2.5 text-[#862f3f] mb-1">
+<span class="material-symbols-outlined text-[20px]">history_edu</span>
+<span class="text-xs font-bold uppercase tracking-wider">Dedicated Practice</span>
+</div>
+<p class="text-sm font-semibold text-charcoal">17+ Years in Pediatric Cardiology</p>
+<p class="text-xs text-muted">Congenital &amp; Acquired Heart Conditions</p>
+</div>
+<div class="p-4 rounded-2xl bg-[#fff9fa] border border-[#f4cdd3]/80">
+<div class="flex items-center gap-2.5 text-[#862f3f] mb-1">
+<span class="material-symbols-outlined text-[20px]">psychology_alt</span>
+<span class="text-xs font-bold uppercase tracking-wider">Care Philosophy</span>
+</div>
+<p class="text-sm font-semibold text-charcoal">Unrushed &amp; Empathetic Care</p>
+<p class="text-xs text-muted">Child-friendly pace with zero needle echo</p>
+</div>
+<div class="p-4 rounded-2xl bg-[#fff9fa] border border-[#f4cdd3]/80">
+<div class="flex items-center gap-2.5 text-[#862f3f] mb-1">
+<span class="material-symbols-outlined text-[20px]">translate</span>
+<span class="text-xs font-bold uppercase tracking-wider">Spoken Languages</span>
+</div>
+<p class="text-sm font-semibold text-charcoal">English, Kannada (ಕನ್ನಡ)</p>
+<p class="text-xs text-muted">Hindi (हिन्दी), Marathi (मराठी)</p>
+</div>
+</div>
+<!-- Doctor quote card -->
+<div class="p-5 rounded-2xl bg-[#fdedf0]/60 border border-[#f4cdd3] flex gap-4 items-start">
+<span class="material-symbols-outlined text-[#de687a] text-[32px] shrink-0">format_quote</span>
+<p class="text-sm text-charcoal/85 italic leading-relaxed">
+                “A pediatric cardiology visit should never feel frightening for a child or cryptic for the parents. We explain every murmur, every chamber, and every reading in simple, compassionate terms.”
+              </p>
+</div>
+</div>
+<!-- Clinic Atmosphere Card Column -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<div class="bg-[#fff9fa] p-8 rounded-3xl border border-[#f4cdd3] shadow-sm flex flex-col gap-6">
+<h3 class="font-headline text-2xl text-[#862f3f]">What Sets Our Practice Apart</h3>
+<div class="flex gap-4 items-start">
+<div class="w-10 h-10 rounded-xl bg-white border border-[#f4cdd3] text-[#a33649] flex items-center justify-center shrink-0 shadow-xs">
+<span class="material-symbols-outlined text-[22px]">nest_farsight_dd</span>
+</div>
+<div>
+<h4 class="text-sm font-bold text-charcoal">Tailored Infant &amp; Child Probes</h4>
+<p class="text-xs text-muted mt-1 leading-relaxed">We utilize ultra-gentle, high-frequency pediatric ultrasound probes with warmed hypoallergenic gel so babies stay calm throughout.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div class="w-10 h-10 rounded-xl bg-white border border-[#f4cdd3] text-[#a33649] flex items-center justify-center shrink-0 shadow-xs">
+<span class="material-symbols-outlined text-[22px]">family_restroom</span>
+</div>
+<div>
+<h4 class="text-sm font-bold text-charcoal">Parent In-Room Partnership</h4>
+<p class="text-xs text-muted mt-1 leading-relaxed">Parents are encouraged to feed, hold, or read to their child right through the screening. No sterile isolation.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div class="w-10 h-10 rounded-xl bg-white border border-[#f4cdd3] text-[#a33649] flex items-center justify-center shrink-0 shadow-xs">
+<span class="material-symbols-outlined text-[22px]">quick_reference_all</span>
+</div>
+<div>
+<h4 class="text-sm font-bold text-charcoal">Immediate Consultation &amp; Plan</h4>
+<p class="text-xs text-muted mt-1 leading-relaxed">You receive clear verbal explanations and detailed non-invasive diagnostic reports on the same day before leaving.</p>
+</div>
+</div>
+<div class="pt-2">
+<a class="w-full inline-flex items-center justify-center gap-2 bg-[#fde9eb] hover:bg-[#fad3d8] text-[#862f3f] font-semibold text-sm py-3 rounded-xl border border-[#f4cdd3] transition-colors" href="#contact">
+<span>Schedule an Evaluation with Dr. Manvi</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Specialized Pediatric Heart Services -->
+<section class="w-full py-16 lg:py-24 bg-[#fff9fa]" id="services">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Header -->
+<div class="text-center max-w-3xl mx-auto mb-14">
+<div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#a33649] mb-2">
+<span class="material-symbols-outlined text-[16px]">ecg_heart</span>
+<span>Comprehensive Pediatric Cardiac Care</span>
+</div>
+<h2 class="font-headline text-3xl sm:text-4xl lg:text-5xl text-charcoal">
+            Advanced, Gentle Diagnostics Built Exclusively for Growing Hearts
+          </h2>
+<p class="text-muted text-sm sm:text-base mt-3">
+            State-of-the-art non-invasive diagnostics tailored specifically for neonates, infants, young children, and adolescents.
+          </p>
+</div>
+<!-- Bento Grid Services -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Service 1 -->
+<div class="p-7 rounded-3xl bg-white border border-[#f4cdd3]/70 hover:border-[#ea8b99] transition-all hover:shadow-md group flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-[#fff0f2] text-[#c5495e] flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">monitor_heart</span>
+</div>
+<h3 class="font-headline text-2xl text-charcoal font-semibold mb-2 group-hover:text-[#862f3f] transition-colors">
+                Pediatric Echocardiography
+              </h3>
+<p class="text-sm text-charcoal/70 leading-relaxed font-light">
+                High-resolution Color Doppler 2D ultrasound specifically calibrated for infants and children. Zero radiation, completely non-invasive and painless.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-[#f4cdd3]/40 flex items-center justify-between text-xs font-semibold text-[#862f3f]">
+<span>Radiation-free • Instant results</span>
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="p-7 rounded-3xl bg-white border border-[#f4cdd3]/70 hover:border-[#ea8b99] transition-all hover:shadow-md group flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-[#fff0f2] text-[#c5495e] flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">vital_signs</span>
+</div>
+<h3 class="font-headline text-2xl text-charcoal font-semibold mb-2 group-hover:text-[#862f3f] transition-colors">
+                Congenital Heart Defect (CHD) Care
+              </h3>
+<p class="text-sm text-charcoal/70 leading-relaxed font-light">
+                Comprehensive evaluation and management of structural conditions including ASD, VSD, PDA, Tetralogy of Fallot, and aortic coarctations with pre/post intervention guidance.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-[#f4cdd3]/40 flex items-center justify-between text-xs font-semibold text-[#862f3f]">
+<span>Pre &amp; Post Procedure Follow-up</span>
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="p-7 rounded-3xl bg-white border border-[#f4cdd3]/70 hover:border-[#ea8b99] transition-all hover:shadow-md group flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-[#fff0f2] text-[#c5495e] flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">child_care</span>
+</div>
+<h3 class="font-headline text-2xl text-charcoal font-semibold mb-2 group-hover:text-[#862f3f] transition-colors">
+                Neonatal Cardiology &amp; Murmurs
+              </h3>
+<p class="text-sm text-charcoal/70 leading-relaxed font-light">
+                Urgent newborn screening for innocent vs. pathological heart murmurs, cyanosis (blueness), poor feeding, and neonatal cardiac stabilization.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-[#f4cdd3]/40 flex items-center justify-between text-xs font-semibold text-[#862f3f]">
+<span>Priority newborn slots</span>
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+</div>
+</div>
+<!-- Service 4 -->
+<div class="p-7 rounded-3xl bg-white border border-[#f4cdd3]/70 hover:border-[#ea8b99] transition-all hover:shadow-md group flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-[#fff0f2] text-[#c5495e] flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">cardiology</span>
+</div>
+<h3 class="font-headline text-2xl text-charcoal font-semibold mb-2 group-hover:text-[#862f3f] transition-colors">
+                Pediatric Arrhythmias &amp; Palpitations
+              </h3>
+<p class="text-sm text-charcoal/70 leading-relaxed font-light">
+                Specialized 12-lead pediatric ECG analysis, ambulatory Holter rhythm monitoring, and assessment of racing or fluttering heartbeats in children.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-[#f4cdd3]/40 flex items-center justify-between text-xs font-semibold text-[#862f3f]">
+<span>Holter &amp; Rhythm Guidance</span>
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+</div>
+</div>
+<!-- Service 5 -->
+<div class="p-7 rounded-3xl bg-white border border-[#f4cdd3]/70 hover:border-[#ea8b99] transition-all hover:shadow-md group flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-[#fff0f2] text-[#c5495e] flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">sports_gymnastics</span>
+</div>
+<h3 class="font-headline text-2xl text-charcoal font-semibold mb-2 group-hover:text-[#862f3f] transition-colors">
+                Syncope &amp; Chest Pain in Youth
+              </h3>
+<p class="text-sm text-charcoal/70 leading-relaxed font-light">
+                Careful evaluations for fainting spells, dizziness, exercise-induced chest tightness, and safe clearance for competitive sports in school-going children.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-[#f4cdd3]/40 flex items-center justify-between text-xs font-semibold text-[#862f3f]">
+<span>Sports &amp; School Clearance</span>
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+</div>
+</div>
+<!-- Service 6 -->
+<div class="p-7 rounded-3xl bg-white border border-[#f4cdd3]/70 hover:border-[#ea8b99] transition-all hover:shadow-md group flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-2xl bg-[#fff0f2] text-[#c5495e] flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">clinical_notes</span>
+</div>
+<h3 class="font-headline text-2xl text-charcoal font-semibold mb-2 group-hover:text-[#862f3f] transition-colors">
+                Long-Term Cardiac Growth Tracking
+              </h3>
+<p class="text-sm text-charcoal/70 leading-relaxed font-light">
+                Continuous developmental oversight for children post-cardiac surgery or transcatheter intervention, monitoring physical growth, weight, and general health.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-[#f4cdd3]/40 flex items-center justify-between text-xs font-semibold text-[#862f3f]">
+<span>Lifelong pediatric support</span>
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+</div>
+</div>
+</div>
+<div class="mt-10 p-5 rounded-2xl bg-white border border-[#f4cdd3] flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#de687a] text-[24px]">info</span>
+<span class="text-sm text-charcoal/80">Need an opinion on a previous scan or finding? We provide comprehensive second opinions.</span>
+</div>
+<a class="text-sm font-bold text-[#862f3f] hover:underline flex items-center gap-1" href="#contact">
+            Request Second Opinion <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 6. Parent Guide — Preparing Your Child's Visit -->
+<section class="w-full py-16 lg:py-24 bg-white" id="guide">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-14">
+<span class="text-xs font-bold uppercase tracking-widest text-[#a33649] block mb-2">Peace of Mind Guide</span>
+<h2 class="font-headline text-3xl sm:text-4xl lg:text-5xl text-charcoal">
+            Preparing for Your Child’s Visit
+          </h2>
+<p class="text-muted text-sm sm:text-base mt-3">
+            Visiting a heart clinic does not have to be stressful. Here is what to prepare, how to speak with your child, and what to expect.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="relative p-8 rounded-3xl bg-[#fff9fa] border border-[#f4cdd3] flex flex-col justify-between">
+<span class="font-headline text-5xl font-bold text-[#ea8b99]/40 absolute top-6 right-6">01</span>
+<div>
+<div class="w-12 h-12 rounded-2xl bg-white border border-[#f4cdd3] text-[#862f3f] flex items-center justify-center mb-6 shadow-xs">
+<span class="material-symbols-outlined text-[24px]">folder_shared</span>
+</div>
+<h3 class="font-headline text-2xl text-charcoal font-semibold mb-3">What to Bring</h3>
+<ul class="text-sm text-charcoal/75 space-y-2.5 font-light">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-[#ea8b99] shrink-0 mt-0.5">check</span>
+<span>Previous medical files, pediatric notes, or birth discharge summaries.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-[#ea8b99] shrink-0 mt-0.5">check</span>
+<span>Any prior ECG or echo reports if conducted elsewhere.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-[#ea8b99] shrink-0 mt-0.5">check</span>
+<span>Your child’s favorite comforting blanket, pacifier, or stuffed toy.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-[#ea8b99] shrink-0 mt-0.5">check</span>
+<span>A small snack or feeding bottle for infants.</span>
+</li>
+</ul>
+</div>
+<div class="mt-6 text-xs text-[#862f3f] font-semibold bg-white p-3 rounded-xl border border-[#f4cdd3]/70">
+              Tip: Feeding your baby right before the echo scan often helps them sleep comfortably through it!
+            </div>
+</div>
+<!-- Card 2 -->
+<div class="relative p-8 rounded-3xl bg-[#fff9fa] border border-[#f4cdd3] flex flex-col justify-between">
+<span class="font-headline text-5xl font-bold text-[#ea8b99]/40 absolute top-6 right-6">02</span>
+<div>
+<div class="w-12 h-12 rounded-2xl bg-white border border-[#f4cdd3] text-[#862f3f] flex items-center justify-center mb-6 shadow-xs">
+<span class="material-symbols-outlined text-[24px]">record_voice_over</span>
+</div>
+<h3 class="font-headline text-2xl text-charcoal font-semibold mb-3">How to Talk to Your Child</h3>
+<ul class="text-sm text-charcoal/75 space-y-2.5 font-light">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-[#ea8b99] shrink-0 mt-0.5">check</span>
+<span>Reassure them there are <strong>no shots, injections, or needles</strong> involved in an echocardiogram.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-[#ea8b99] shrink-0 mt-0.5">check</span>
+<span>Explain the doctor has a special camera and warm jelly that takes pictures of their heartbeat movie.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-[#ea8b99] shrink-0 mt-0.5">check</span>
+<span>Remind them that mommy or daddy will be right next to them holding their hand the entire time.</span>
+</li>
+</ul>
+</div>
+<div class="mt-6 text-xs text-[#862f3f] font-semibold bg-white p-3 rounded-xl border border-[#f4cdd3]/70">
+              Positive framing reduces hesitation and turns the visit into an interesting discovery!
+            </div>
+</div>
+<!-- Card 3 -->
+<div class="relative p-8 rounded-3xl bg-[#fff9fa] border border-[#f4cdd3] flex flex-col justify-between">
+<span class="font-headline text-5xl font-bold text-[#ea8b99]/40 absolute top-6 right-6">03</span>
+<div>
+<div class="w-12 h-12 rounded-2xl bg-white border border-[#f4cdd3] text-[#862f3f] flex items-center justify-center mb-6 shadow-xs">
+<span class="material-symbols-outlined text-[24px]">schedule</span>
+</div>
+<h3 class="font-headline text-2xl text-charcoal font-semibold mb-3">What to Expect</h3>
+<ul class="text-sm text-charcoal/75 space-y-2.5 font-light">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-[#ea8b99] shrink-0 mt-0.5">check</span>
+<span>An unrushed 30 to 45 minute consultation dedicated exclusively to your family.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-[#ea8b99] shrink-0 mt-0.5">check</span>
+<span>Dimmed, quiet, cozy examination room with cartoons or soothing nursery melodies.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px] text-[#ea8b99] shrink-0 mt-0.5">check</span>
+<span>Immediate, transparent discussion with Dr. Manvi with diagrams and clear next steps.</span>
+</li>
+</ul>
+</div>
+<div class="mt-6 text-xs text-[#862f3f] font-semibold bg-white p-3 rounded-xl border border-[#f4cdd3]/70">
+              Every question you have is encouraged and treated with the highest respect.
+            </div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Frequently Asked Questions -->
+<section class="w-full py-16 lg:py-24 bg-[#fff9fa] border-t border-[#f4cdd3]/50" id="faq">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-12">
+<span class="text-xs font-bold uppercase tracking-widest text-[#a33649] block mb-2">Clarity &amp; Answers</span>
+<h2 class="font-headline text-3xl sm:text-4xl text-charcoal">
+            Frequently Asked Questions by Parents
+          </h2>
+</div>
+<div class="space-y-4">
+<!-- FAQ 1 -->
+<div class="bg-white p-6 rounded-2xl border border-[#f4cdd3]/80 shadow-xs">
+<h3 class="font-headline text-xl text-charcoal font-semibold mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-[#ea8b99] text-[22px]">help_center</span>
+              Is an echocardiogram painful or scary for my baby?
+            </h3>
+<p class="text-sm text-charcoal/75 leading-relaxed pl-8 font-light">
+              Not at all. An echocardiogram uses safe ultrasound sound waves—there is zero radiation and zero pain. It feels like a gentle slide of a warm plastic probe on the chest with soft gel. Parents can hold their baby or give them milk during the scan.
+            </p>
+</div>
+<!-- FAQ 2 -->
+<div class="bg-white p-6 rounded-2xl border border-[#f4cdd3]/80 shadow-xs">
+<h3 class="font-headline text-xl text-charcoal font-semibold mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-[#ea8b99] text-[22px]">help_center</span>
+              Do I need a pediatrician's referral to schedule?
+            </h3>
+<p class="text-sm text-charcoal/75 leading-relaxed pl-8 font-light">
+              While many parents are referred by their general pediatrician due to a murmur or symptoms, a formal referral letter is not strictly mandatory. You can reach out directly if you have specific family history, noticeable symptoms, or concerns about your child’s heart health.
+            </p>
+</div>
+<!-- FAQ 3 -->
+<div class="bg-white p-6 rounded-2xl border border-[#f4cdd3]/80 shadow-xs">
+<h3 class="font-headline text-xl text-charcoal font-semibold mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-[#ea8b99] text-[22px]">help_center</span>
+              How long does the entire evaluation take?
+            </h3>
+<p class="text-sm text-charcoal/75 leading-relaxed pl-8 font-light">
+              We allocate 30 to 45 minutes for initial consultations. This provides adequate time for clinical examination, resting the child, performing the echocardiogram at an unhurried pace, and thoroughly discussing the findings with you.
+            </p>
+</div>
+<!-- FAQ 4 -->
+<div class="bg-white p-6 rounded-2xl border border-[#f4cdd3]/80 shadow-xs">
+<h3 class="font-headline text-xl text-charcoal font-semibold mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-[#ea8b99] text-[22px]">help_center</span>
+              How soon can we get an appointment?
+            </h3>
+<p class="text-sm text-charcoal/75 leading-relaxed pl-8 font-light">
+              Routine appointments are typically booked within 24 to 48 hours. For newborns with suspected critical cyanotic defects, rapid breathing, or physician-flagged urgent cases, same-day priority review slots are reserved.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. Warm Consultation & Appointment Request Section -->
+<section class="w-full py-16 lg:py-24 bg-white border-t border-[#f4cdd3]/70" id="contact">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Clinic Details & Contact Information -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<div>
+<span class="text-xs font-bold uppercase tracking-widest text-[#a33649] block mb-2">Connect With Us</span>
+<h2 class="font-headline text-3xl sm:text-4xl text-charcoal">
+                Schedule a Visit or Ask a Question
+              </h2>
+<p class="text-sm text-charcoal/75 mt-3 leading-relaxed font-light">
+                Our clinic staff will warmly guide you through scheduling, directions, and pre-visit questions.
+              </p>
+</div>
+<!-- Timings card -->
+<div class="p-5 rounded-2xl bg-[#fff9fa] border border-[#f4cdd3]">
+<div class="flex items-center gap-2.5 text-[#862f3f] mb-3">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+<span class="text-xs font-bold uppercase tracking-wider">Clinic Hours</span>
+</div>
+<div class="flex justify-between items-center text-sm py-1 border-b border-[#f4cdd3]/50">
+<span class="text-charcoal font-medium">Monday – Saturday</span>
+<span class="text-charcoal/80">9:00 AM – 5:00 PM</span>
+</div>
+<div class="flex justify-between items-center text-sm py-1.5 pt-2 text-rose-700 font-medium">
+<span>Sunday</span>
+<span class="text-xs uppercase bg-rose-50 px-2 py-0.5 rounded border border-rose-200">Closed (Emergency On-Call)</span>
+</div>
+</div>
+<!-- Location card -->
+<div class="p-5 rounded-2xl bg-[#fff9fa] border border-[#f4cdd3]">
+<div class="flex items-center gap-2.5 text-[#862f3f] mb-2">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+<span class="text-xs font-bold uppercase tracking-wider">Clinic Location</span>
+</div>
+<p class="text-sm font-semibold text-charcoal">Kids Heart Clinic &amp; Diagnostic Suite</p>
+<p class="text-xs text-muted mt-1 leading-relaxed">
+                Dedicated Pediatric Wing, Suite 204, Landmark Medical Enclave,<br/>
+                Accessible lift, stroller-friendly ramps, and valet parking available.
+              </p>
+</div>
+<!-- Direct phone line -->
+<div class="p-5 rounded-2xl bg-[#fdedf0] border border-[#f4cdd3] flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-white text-[#a33649] flex items-center justify-center shrink-0 shadow-xs">
+<span class="material-symbols-outlined text-[24px]">call</span>
+</div>
+<div>
+<p class="text-xs text-[#862f3f] font-bold uppercase">Direct Desk &amp; WhatsApp</p>
+<a class="text-base font-bold text-charcoal hover:text-[#a33649] transition-colors" href="tel:+919845012345">+91 98450 12345</a>
+<p class="text-[11px] text-muted">Warm assistance by our care coordinator</p>
+</div>
+</div>
+</div>
+<!-- Consultation Inquiry Form -->
+<div class="lg:col-span-7">
+<div class="bg-[#fff9fa] p-8 sm:p-10 rounded-3xl border border-[#f4cdd3] shadow-sm">
+<h3 class="font-headline text-2xl text-charcoal font-semibold mb-2">Request an Appointment</h3>
+<p class="text-xs sm:text-sm text-charcoal/70 mb-6 font-light">
+                Fill in the details below. Our care team will call or message back within a few business hours to confirm a convenient slot.
+              </p>
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you! Your appointment inquiry has been received. Our team will contact you shortly.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-semibold text-charcoal/80 mb-1.5">Parent / Guardian Name *</label>
+<input class="w-full text-sm rounded-xl border-[#f4cdd3] focus:border-[#ea8b99] focus:ring-[#ea8b99] bg-white px-4 py-2.5 text-charcoal placeholder-charcoal/40" placeholder="e.g. Priya Sharma" required="" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-semibold text-charcoal/80 mb-1.5">Child's Age or Date of Birth *</label>
+<input class="w-full text-sm rounded-xl border-[#f4cdd3] focus:border-[#ea8b99] focus:ring-[#ea8b99] bg-white px-4 py-2.5 text-charcoal placeholder-charcoal/40" placeholder="e.g. 8 months, 4 years" required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-semibold text-charcoal/80 mb-1.5">Contact Phone Number *</label>
+<input class="w-full text-sm rounded-xl border-[#f4cdd3] focus:border-[#ea8b99] focus:ring-[#ea8b99] bg-white px-4 py-2.5 text-charcoal placeholder-charcoal/40" placeholder="+91 98765 43210" required="" type="tel"/>
+</div>
+<div>
+<label class="block text-xs font-semibold text-charcoal/80 mb-1.5">Preferred Consultation Type</label>
+<select class="w-full text-sm rounded-xl border-[#f4cdd3] focus:border-[#ea8b99] focus:ring-[#ea8b99] bg-white px-4 py-2.5 text-charcoal">
+<option>Initial Clinic Consultation &amp; Echo</option>
+<option>Newborn Heart Screening / Murmur Check</option>
+<option>Second Opinion on Previous Echo</option>
+<option>Post-Procedure / Annual Follow-up</option>
+<option>Sports Fitness Cardiac Clearance</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-xs font-semibold text-charcoal/80 mb-1.5">Notes or Symptoms (Optional)</label>
+<textarea class="w-full text-sm rounded-xl border-[#f4cdd3] focus:border-[#ea8b99] focus:ring-[#ea8b99] bg-white px-4 py-2.5 text-charcoal placeholder-charcoal/40" placeholder="Tell us if a doctor detected a murmur, or if your child has shortness of breath, palpitations, or recent reports..." rows="3"></textarea>
+</div>
+<div class="pt-2">
+<button class="w-full inline-flex items-center justify-center gap-2 bg-[#ea8b99] hover:bg-[#de687a] text-white font-semibold text-base py-3.5 px-6 rounded-full transition-all shadow hover:shadow-md active:scale-95" type="submit">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Send Consultation Inquiry</span>
+</button>
+<p class="text-[11px] text-center text-muted mt-3">
+                    Your details are completely confidential. Never shared with third parties.
+                  </p>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- 9. Complete Footer -->
+<footer class="w-full bg-[#fdf2f4] border-t border-[#f4cdd3] pt-14 pb-10 text-charcoal">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-[#f4cdd3]/60">
+<!-- Brand & Bio -->
+<div class="lg:col-span-5 flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-2xl bg-[#ea8b99] text-white flex items-center justify-center shadow-xs">
+<span class="material-symbols-outlined text-[22px]">favorite</span>
+</div>
+<div>
+<span class="font-headline font-bold text-xl text-[#732b39] block">Kids Heart Clinic</span>
+<span class="text-xs text-charcoal/70">Dr. Veeresh Manvi, Pediatric Cardiologist</span>
+</div>
+</div>
+<p class="text-xs text-charcoal/75 leading-relaxed max-w-sm font-light">
+            Providing compassionate, non-invasive pediatric cardiology care, echocardiograms, and newborn heart screening with over 17 years of dedicated clinical experience.
+          </p>
+<div class="flex items-center gap-2 text-xs text-[#862f3f] font-semibold">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Registered Medical Practitioner • KMC Verified</span>
+</div>
+</div>
+<!-- Quick Links -->
+<div class="lg:col-span-3 flex flex-col gap-2.5">
+<p class="text-xs font-bold uppercase tracking-wider text-[#a33649] mb-1">Navigation</p>
+<a class="text-xs text-charcoal/75 hover:text-[#862f3f] transition-colors" href="#about">About Dr. Veeresh Manvi</a>
+<a class="text-xs text-charcoal/75 hover:text-[#862f3f] transition-colors" href="#services">Pediatric Echocardiography</a>
+<a class="text-xs text-charcoal/75 hover:text-[#862f3f] transition-colors" href="#services">Congenital Heart Defect Guidance</a>
+<a class="text-xs text-charcoal/75 hover:text-[#862f3f] transition-colors" href="#guide">Parent Preparation Guide</a>
+<a class="text-xs text-charcoal/75 hover:text-[#862f3f] transition-colors" href="#faq">Frequently Asked Questions</a>
+</div>
+<!-- Contact & Hours -->
+<div class="lg:col-span-4 flex flex-col gap-2.5">
+<p class="text-xs font-bold uppercase tracking-wider text-[#a33649] mb-1">Clinic Contact</p>
+<div class="flex items-center gap-2 text-xs text-charcoal/80">
+<span class="material-symbols-outlined text-[16px] text-[#ea8b99]">call</span>
+<span>+91 98450 12345 / 080 2345 6789</span>
+</div>
+<div class="flex items-center gap-2 text-xs text-charcoal/80">
+<span class="material-symbols-outlined text-[16px] text-[#ea8b99]">mail</span>
+<span>contact@kidsheartclinic.com</span>
+</div>
+<div class="flex items-center gap-2 text-xs text-charcoal/80">
+<span class="material-symbols-outlined text-[16px] text-[#ea8b99]">schedule</span>
+<span>Monday – Saturday: 9:00 AM – 5:00 PM</span>
+</div>
+<div class="flex items-center gap-2 text-xs text-charcoal/80">
+<span class="material-symbols-outlined text-[16px] text-[#ea8b99]">location_on</span>
+<span>Pediatric Wing, Suite 204, Landmark Medical Enclave</span>
+</div>
+</div>
+</div>
+<!-- Legal & Medical Disclaimer -->
+<div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+<p class="text-[11px] text-muted max-w-2xl leading-relaxed">
+<strong>Medical Disclaimer:</strong> Information presented on this website is for educational purposes only and is not a substitute for professional medical advice, diagnosis, or clinical consultation with a certified pediatric cardiologist.
+        </p>
+<p class="text-[11px] text-muted shrink-0">
+          © <script>document.write(new Date().getFullYear())</script> Kids Heart Clinic. All rights reserved.
+        </p>
+</div>
+</div>
+</footer>
+</body></html>
