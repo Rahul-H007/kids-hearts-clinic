@@ -1,5 +1,5 @@
 /* ==========================================================
-   Kids Heart Clinic — interactions
+   Kids Heart Clinic: interactions
    ========================================================== */
 (() => {
   "use strict";
@@ -326,7 +326,7 @@
     setAge(0);
   }
 
-  // A soft, synthesised "lub-dub" — no audio files needed
+  // A soft, synthesised "lub-dub", no audio files needed
   let audioCtx = null;
   let soundOn = false;
   let beatTimer = null;
@@ -478,7 +478,7 @@
     packFill.style.width = `${(done / checks.length) * 100}%`;
     const all = done === checks.length;
     packMsg.classList.toggle("is-ready", all);
-    packMsg.textContent = all ? "All packed. You’re ready — and you’re doing a wonderful job." : packDefault;
+    packMsg.textContent = all ? "All packed. You’re ready, and you’re doing a wonderful job." : packDefault;
     store.set("khc-pack", Object.fromEntries(checks.map((c) => [c.dataset.key, c.checked])));
   }
   checks.forEach((c) => {
