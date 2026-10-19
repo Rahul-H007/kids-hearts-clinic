@@ -794,7 +794,8 @@ p { margin: 0; }
 .footer__hours li span:first-child { font-weight: 600; color: var(--ink); }
 .footer__hours li.is-closed { margin-top: 4px; padding-top: 9px; border-top: 1px dashed var(--line); }
 .footer__hours li.is-closed span:last-child { color: #b03a52; font-weight: 600; }
-.footer__phone { display: inline-flex; align-items: center; gap: 6px; margin-top: 12px; font-weight: 700; color: var(--brand-800); }
+.footer__phone { display: flex; width: fit-content; max-width: 100%; align-items: center; gap: 6px; margin-top: 12px; font-weight: 700; color: var(--brand-800); overflow-wrap: anywhere; }
+.footer__phone + .footer__phone { margin-top: 8px; }
 .footer__phone .material-symbols-outlined { font-size: 18px; color: var(--brand-400); }
 .footer__phone:hover { color: var(--brand-600); }
 
