@@ -6,3 +6,4 @@ index.html.txt
 node_modules
 worker.js
 .wrangler
+.gitignore
