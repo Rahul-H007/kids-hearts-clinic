@@ -545,13 +545,40 @@
       input.addEventListener("input", () => { if (input.closest(".field").classList.contains("is-invalid")) validateField(input); });
     });
 
-    form.addEventListener("submit", (e) => {
+    // Emails the request to the clinic (worker.js). If that fails, the WhatsApp button is the way to send it.
+    async function sendRequest(data) {
+      try {
+        const res = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({ ...data, turnstileToken: data["cf-turnstile-response"] || "" }),
+        });
+        const body = await res.json().catch(() => ({}));
+        return res.ok && body.ok === true;
+      } catch {
+        return false;
+      }
+    }
+
+    const submitBtn = $("#formSubmit");
+    const submitLabel = $("#formSubmitLabel");
+
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
+      if (submitBtn.disabled) return;
       const results = required.map(validateField);
       const firstBad = required[results.indexOf(false)];
       if (firstBad) { firstBad.focus(); return; }
 
       const data = Object.fromEntries(new FormData(form));
+      submitBtn.disabled = true;
+      submitLabel.textContent = "Sending…";
+      const sent = await sendRequest(data);
+      submitBtn.disabled = false;
+      submitLabel.textContent = "Send consultation request";
+      window.turnstile?.reset();
+      $("#doneSent").hidden = !sent;
+      $("#doneUnsent").hidden = sent;
       const msg = [
         "Hello Kids Heart Clinic, I’d like to request an appointment.",
         "",

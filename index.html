@@ -521,15 +521,18 @@
             </div>
           </div>
           <div class="field"><textarea id="fNotes" name="notes" rows="3" placeholder=" "></textarea><label for="fNotes">Notes or symptoms (optional)</label></div>
+          <div class="form__hp" aria-hidden="true"><label for="fWebsite">Leave this empty</label><input id="fWebsite" name="website" type="text" tabindex="-1" autocomplete="off" /></div>
+          <div class="cf-turnstile form__check" data-sitekey="0x4AAAAAAFe1mIvUcqs4fhUY" data-size="flexible" data-theme="light"></div>
 
-          <button class="btn btn--primary btn--lg btn--block" type="submit"><span class="material-symbols-outlined">send</span>Send consultation request</button>
+          <button class="btn btn--primary btn--lg btn--block" type="submit" id="formSubmit"><span class="material-symbols-outlined">send</span><span id="formSubmitLabel">Send consultation request</span></button>
           <p class="tiny center">Your details stay private and are never shared.</p>
         </form>
 
         <div class="form-done" id="formDone" hidden>
           <div class="form-done__heart"><span class="material-symbols-outlined fill">favorite</span></div>
           <h3 class="h3">Thank you, <span id="doneName">friend</span>.</h3>
-          <p>Your request is ready. Send it to our care coordinator on WhatsApp and we’ll get back to you soon. Whatever brought you here, you’ve already taken the most caring step.</p>
+          <p id="doneSent" hidden>We’ve received your request. Our care team will call or message you within a few working hours. If you’d also like to send it on WhatsApp, use the button below.</p>
+          <p id="doneUnsent">Your request is ready. Send it to our care coordinator on WhatsApp and we’ll get back to you soon. Whatever brought you here, you’ve already taken the most caring step.</p>
           <a class="btn btn--primary btn--lg" id="waLink" href="#" target="_blank" rel="noopener"><span class="material-symbols-outlined">chat</span>Send on WhatsApp</a>
           <button class="link-btn" id="formReset" type="button">Edit my request</button>
         </div>
@@ -607,6 +610,7 @@
 <button class="to-top" id="toTop" aria-label="Back to top"><span class="material-symbols-outlined fill">favorite</span></button>
 
 <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 <script src="script.js"></script>
 </body>
 </html>

@@ -496,6 +496,9 @@ p { margin: 0; }
 .form-wrap { background: var(--bg); border: 1px solid var(--line); border-radius: 30px; padding: clamp(26px, 4vw, 44px); box-shadow: var(--shadow-sm); position: relative; }
 .form { display: flex; flex-direction: column; gap: 16px; }
 .form .muted { margin: -6px 0 6px; }
+.form__hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.form__check { min-height: 65px; }
+#formSubmit:disabled { opacity: 0.7; cursor: progress; }
 .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .field { position: relative; }
 .field input, .field select, .field textarea {
