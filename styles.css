@@ -313,6 +313,20 @@ p { margin: 0; }
 .cred__head { display: flex; align-items: center; gap: 8px; color: var(--brand-800); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 6px; }
 .cred strong { display: block; font-size: 0.92rem; font-weight: 600; }
 .cred small { color: var(--muted); font-size: 0.78rem; }
+.reviews { display: grid; gap: 16px; }
+.review { margin: 0; position: relative; padding: 24px 22px 20px; border-radius: 22px; background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow-sm); }
+.review__mark { position: absolute; top: 14px; right: 16px; font-size: 34px; color: var(--brand-400); opacity: 0.45; }
+.review blockquote { margin: 0; }
+.review blockquote p { color: var(--ink); font-size: 1rem; line-height: 1.7; padding-right: 28px; }
+.review--feature blockquote p { font-size: 1.08rem; }
+.review figcaption { margin-top: 12px; font-size: 0.78rem; letter-spacing: 0.04em; color: var(--ink-soft); font-weight: 600; }
+.reviews__more { margin-top: 28px; text-align: center; }
+.reviews__more .btn { white-space: normal; max-width: 100%; text-align: center; justify-content: center; }
+@media (min-width: 760px) {
+  .reviews { grid-template-columns: 1fr 1fr; gap: 20px; }
+  .review--feature { grid-column: 1 / -1; padding: 30px 32px 26px; }
+  .review--feature blockquote p { font-size: 1.18rem; }
+}
 .quote { margin: 0; padding: 20px 22px; border-radius: 18px; background: rgba(253, 237, 240, 0.65); border: 1px solid var(--line); display: flex; gap: 14px; }
 .quote .material-symbols-outlined { color: var(--brand-500); font-size: 34px; flex-shrink: 0; }
 .quote p { font-style: italic; color: var(--ink-soft); font-size: 0.95rem; line-height: 1.7; }
